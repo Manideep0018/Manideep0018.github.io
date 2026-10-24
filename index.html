@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- EDIT: your name and a one-line description (shows in Google and browser tab) -->
+<title>YOUR NAME | Web Developer</title>
+<meta name="description" content="CSE student building full stack web projects. Looking for a web development internship.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f2f6f5;
+    --ink: #10282f;
+    --muted: #4d646b;
+    --line: #c9d8d6;
+    --accent: #0f766e;
+    --mark: #f5b83d;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 3px solid var(--mark); outline-offset: 3px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  header.top { padding: 20px 0; border-bottom: 1px solid var(--line); }
+  header.top .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  header.top a { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 16px; }
+  nav { display: flex; gap: 20px; }
+  nav a { font-weight: 400; color: var(--muted); }
+  nav a:hover { color: var(--accent); }
+
+  .hero { padding: 72px 0 56px; }
+  .hero h1 {
+    font-size: clamp(40px, 8vw, 72px);
+    line-height: 1.02;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin: 0 0 24px;
+  }
+  .hero p { max-width: 56ch; margin: 0 0 28px; color: var(--muted); }
+  .hero .status {
+    display: inline-block;
+    background: var(--mark);
+    color: var(--ink);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .btns { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid var(--ink);
+    color: var(--ink);
+  }
+  .btn.primary { background: var(--ink); color: var(--bg); }
+  .btn:hover { border-color: var(--accent); background: var(--accent); color: #fff; }
+
+  section { padding: 48px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 28px; letter-spacing: -0.01em; margin: 0 0 28px; }
+
+  .project { padding: 0 0 32px; margin: 0 0 32px; border-bottom: 1px solid var(--line); }
+  .project:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+  .project h3 { margin: 0 0 6px; font-size: 22px; }
+  .project p { margin: 0 0 12px; color: var(--muted); }
+  .stack { font-size: 15px; color: var(--ink); margin-bottom: 10px; }
+  .stack span { background: #dbe8e5; padding: 2px 9px; border-radius: 4px; margin-right: 6px; display: inline-block; margin-bottom: 4px; }
+  .links a { margin-right: 18px; font-weight: 600; }
+
+  .skills { display: grid; gap: 14px; }
+  .skills div { display: grid; grid-template-columns: 130px 1fr; gap: 12px; }
+  .skills dt { font-weight: 600; }
+  .skills dd { margin: 0; color: var(--muted); }
+  dl { margin: 0; }
+
+  ul.plain { list-style: none; padding: 0; margin: 0; }
+  ul.plain li { padding: 8px 0; border-bottom: 1px solid var(--line); }
+  ul.plain li:last-child { border-bottom: 0; }
+
+  footer { padding: 40px 0 56px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+
+  @media (max-width: 520px) {
+    .skills div { grid-template-columns: 1fr; gap: 0; }
+    body { font-size: 17px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <!-- EDIT: your name -->
+    <a href="#top">GADU MANIDEEP</a>
+    <nav aria-label="Main">
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+
+    <div class="hero">
+      <div class="status">Open to internships</div>
+      <!-- EDIT: your name and one-line intro -->
+      <h1>Hi, I'm GADU MANIDEEP. I build web apps.</h1>
+      <p>Third-year CSE student at Avanthi college . I build cs projects and I'm looking for a web development internship where I can learn and contribute.</p>
+      <div class="btns">
+        <!-- EDIT: put your resume file (resume.pdf) in the same folder, or link to Google Drive -->
+        
+        <a class="btn" href="https://github.com/Manideep0018">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/manideep-gadu-b3b425389/">LinkedIn</a>
+      </div>
+    </div>
+    <section id="skills">
+      <h2>Skills</h2>
+      <!-- EDIT: only list what you can actually talk about in an interview -->
+      <dl class="skills">
+        <div><dt>Languages</dt><dd>Python, Java, JavaScript</dd></div>
+        <div><dt>Frontend</dt><dd>HTML, CSS, React</dd></div>
+        <div><dt>Backend</dt><dd>Node.js, Express, REST APIs</dd></div>
+        <div><dt>Database</dt><dd>MongoDB, SQL basics</dd></div>
+        <div><dt>Tools</dt><dd>Git, GitHub, VS Code, Postman</dd></div>
+        <div><dt>Core CS</dt><dd>Data structures, OOP</dd></div>
+      </dl>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul class="certs">
+        <li>
+          <h3>Full Stack Development</h3>
+          <div class="by">GeeksforGeeks</div>
+          <p>Front-end and back-end web development.</p>
+        </li>
+        <li>
+          <h3>Data Structures</h3>
+          <div class="by">GeeksforGeeks</div>
+          <p>Core data structures and problem solving.</p>
+        </li>
+        <li>
+          <h3>Python Programming</h3>
+          <div class="by">GeeksforGeeks</div>
+          <p>Python fundamentals and programming concepts.</p>
+        </li>
+        <li>
+          <h3>Programming in Java</h3>
+          <div class="by">NPTEL</div>
+          <!-- EDIT: add your result, e.g. "Elite, score 72%" -->
+          <p>Java programming and object-oriented concepts.</p>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <!-- EDIT: your email -->
+    <p>Contact me at <a href="mailto:youremail@gmail.com">gmanideep0018@gmail.com</a></p>
+    <p>&copy; 2026 G MANIDEEP</p>
+  </div>
+</footer>
+
+</body>
+</html>
